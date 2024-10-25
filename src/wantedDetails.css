@@ -1,0 +1,125 @@
+/* WantedDetails.css */
+
+.wanted-details-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    min-height: 90vh;
+    overflow: hidden;
+  }
+  
+  .wanted-details-card {
+    display: flex;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 900px;
+    width: 100%;
+  }
+  
+  .wanted-image img {
+    width: 100%;
+    max-width: 300px;
+    object-fit: cover;
+    border: 2px solid #333;
+    border-radius: 12px 0 12px 0;
+  }
+  
+  .wanted-info {
+    padding: 20px;
+    flex: 1;
+  }
+  
+  .wanted-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .status {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #ff0000; /* Red for wanted */
+  }
+  
+  .status.captured {
+    color: #28a745; /* Green if captured */
+  }
+  
+  .reward-section {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  
+  .reward-icon {
+    margin-right: 8px;
+    font-size: 24px;
+  }
+  
+  .description {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #555;
+  }
+  
+  .warning-section {
+    display: flex;
+    align-items: center;
+    color: #e74c3c;
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  
+  .publication {
+    font-size: 14px;
+    color: #777;
+  }
+  
+  .poster-link {
+    display: inline-block;
+    padding: 10px 15px;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .poster-link:hover {
+    background-color: #0056b3;
+  }
+  
+  .additional-info {
+    margin-top: 20px;
+  }
+  
+  .additional-info h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .additional-info p {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .wanted-details-card {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .wanted-image img {
+      max-width: 100%;
+    }
+  }
+  

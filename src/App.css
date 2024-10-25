@@ -1,38 +1,100 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+  font-family: "Roboto", sans-serif;
+}
+body{
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+nav{
+  display: flex;
+  justify-content: flex-start;
+  background-color: #FFF;
+  border-bottom: #3c3c3c 3px solid;
+  margin-bottom: 0.5em;
+}
+nav a{
+  cursor: pointer;
+  padding: 1em;
+  font-weight: 700;
+  font-size: 1.125rem;
+  text-decoration: none;
+  color: #3c3c3c;
+}
+nav a:hover, a:active, a:focus{
+  background-color: #3c3c3c;
+  color: #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main{
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+
+.home{
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  gap: 1em;
 }
 
-.App-link {
-  color: #61dafb;
+.home a{
+  font-family: "Agdasima", sans-serif;
+  text-decoration: none;
+  color: #800000;
+  font-weight: 600;
+  text-decoration: underline;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.select-box{
+  display: flex;
+  justify-content: center;
+}
+
+.select-box select{
+  width: 10em;
+  text-align: right;
+}
+
+.select-box option{
+  text-align: left;
+}
+
+.select-box button{
+  padding: 0.25em 0.5em;
+  cursor: pointer;
+}
+
+.wanteds{
+  margin-left: 3em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+
+.wanted-person a{
+  display: inline-block;
+  text-decoration: none;
+  color: #3c3c3c;
+  margin-bottom: 1em;
+}
+
+.wanted-person img{
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+}
+
+.wanted-details img{
+height: 250px;
+width: 250px;
+}
+
+.wanted-person-images{
+  display: flex;
 }
